@@ -1,0 +1,162 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: black;
+  font-family: "Syne", cursive;
+  text-align: center;
+}
+/* FLEXBOX-BASED LAYOUT in columns - this default applies to screen sizes below 600px */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* FLEXBOX-BASED LAYOUT in rows - applies from 600px and up*/
+@media (min-width: 600px) {
+  .questionContainer {
+    display: flex;
+    width: 95%;
+    height: 75%;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .question {
+    width: 15%;
+    height: 20%;
+  }
+}
+
+/* Styling CSS */
+.question p {
+  margin-bottom: 8%;
+}
+input[type="radio"] {
+  margin-bottom: 5%;
+  text-align: left;
+}
+.question {
+  background-color: darkturquoise;
+  padding: 2%;
+  margin: 2%;
+  border: 0.5em;
+  border-color: fuchsia;
+  border-style: solid;
+  border-radius: 12px;
+  text-align: left;
+  box-shadow: 0 0 60px 10px fuchsia;
+}
+footer {
+  padding: 1.5em 0;
+  line-height: 2.5em;
+  color: fuchsia;
+}
+
+footer p {
+  font-size: 1.5em;
+  padding-bottom: 0;
+}
+
+label {
+  padding-top: 0.5em;
+}
+
+h1 {
+  padding: 0.5em 0;
+  font-size: 5em;
+  color: fuchsia;
+  font-family: "Neonderthaw", cursive;
+}
+button {
+  font-family: inherit;
+  font-size: 1.5em;
+  width: 10em;
+  height: 5em;
+  text-align: center;
+  background-color: fuchsia;
+  border-radius: 12px;
+  border-color: fuchsia;
+  box-shadow: 0 0 60px 10px fuchsia;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: auto;
+  margin-right: auto;
+}
+button:hover {
+  cursor: pointer;
+}
+#resultsContainer {
+  color: white;
+  font-size: 2em;
+}
+.buttons {
+  display: flex;
+  justify-content: space-evenly;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.modal {
+  font-size: 2rem;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: fuchsia(0, 0, 0, 0.5);*/
+  background-color: fuchsia;
+  visibility: hidden;
+  transform: scale(1.1);
+  /*opacity: 0.9;*/
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 1rem 1.5rem;
+  width: 50rem;
+  height: 50rem;
+  border-radius: 0.5rem;
+  border: 1rem;
+  border-color: black;
+  border-style: solid;
+}
+
+.modal-content p {
+  padding: 2rem;
+}
+
+.modal-content img {
+  border: 1rem;
+  border-color: black;
+  border-style: solid;
+  border-radius: 12px;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.show-modal {
+  visibility: visible;
+  transform: scale(1);
+}

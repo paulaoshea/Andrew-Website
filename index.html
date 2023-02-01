@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+
+<!-- Author : Paula OShea -->
+<!-- 10/15/2022 -->
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Andrew Personality Quiz</title>
+    <meta name="description" content="Audrey Personality Quiz" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chango&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Neonderthaw&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="audreyFavicon.ico" />
+    <script src="index.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>Are you Andrew?</h1>
+    </header>
+    <main>
+      <div class="questionContainer">
+        <div class="question">
+          <p>1. What must be done before bed?</p>
+          <input
+            type="radio"
+            id="ans1"
+            name="q1"
+            value="Your meditation practice"
+          />
+          <label for="ans1">Your meditation practice</label><br />
+          <input
+            type="radio"
+            id="ans2"
+            name="q1"
+            value="Feed your sourdough starter"
+          />
+          <label for="ans2">Feed your sourdough starter</label><br />
+          <input
+            type="radio"
+            id="ans3"
+            name="q1"
+            value="A check of every fire alarm in the house"
+          />
+          <label for="ans3">A test of every fire alarm in your house</label>
+        </div>
+
+        <div class="question">
+          <p>2. Where is the center of the Universe?</p>
+          <input type="radio" id="ans1" name="q2" value="Killarney" />
+          <label for="ans1">Killarney</label><br /><br />
+          <input type="radio" id="ans2" name="q2" value="Harpenden" />
+          <label for="ans2">Harpenden</label><br /><br />
+          <input type="radio" id="ans3" name="q2" value="Ecuador" />
+          <label for="ans3">Ecuador</label><br />
+        </div>
+
+        <div class="question">
+          <p>3. What word do you say the most?</p>
+          <input type="radio" id="ans1" name="q3" value="Oooops" />
+          <label for="ans1">Oooops</label><br /><br />
+          <input type="radio" id="ans2" name="q3" value="Sorry" />
+          <label for="ans2">Sorry</label><br /><br />
+          <input type="radio" id="ans3" name="q3" value="Slay" />
+          <label for="ans3">Slay</label><br />
+        </div>
+
+        <div class="question">
+          <p>4. Could you live without chocolate?</p>
+          <input
+            type="radio"
+            id="ans1"
+            name="q4"
+            value="Easy, no problem at all"
+          />
+          <label for="ans1">Easy, no problem at all</label><br /><br />
+          <input
+            type="radio"
+            id="ans2"
+            name="q4"
+            value="Absolutely impossible"
+          />
+          <label for="ans2">Absolutely impossible</label><br /><br />
+          <input
+            type="radio"
+            id="ans3"
+            name="q4"
+            value="Can't stand the stuff"
+          />
+          <label for="ans3">Can't stand the stuff</label><br />
+        </div>
+
+        <div class="question">
+          <p>5. What is your favorite Sunday morning passtime?</p>
+          <input type="radio" id="ans1" name="q5" value="Golf" />
+          <label for="ans1">Golf</label><br /><br />
+          <input type="radio" id="ans2" name="q5" value="Cycling" />
+          <label for="ans2">Cycling</label><br /><br />
+          <input type="radio" id="ans3" name="q5" value="Mass" />
+          <label for="ans3">Mass</label><br />
+        </div>
+
+        <div class="question">
+          <p>6. Ideally, how far would you like to live from your in-laws?</p>
+          <input type="radio" id="ans1" name="q6" value="A country away" />
+          <label for="ans1">A country away</label><br /><br />
+          <input type="radio" id="ans2" name="q6" value="A town away" />
+          <label for="ans2">A town away</label><br /><br />
+          <input type="radio" id="ans3" name="q6" value="Next door" />
+          <label for="ans3">Next door</label><br />
+        </div>
+
+        <div class="question">
+          <p>7. What is the best Italian restaurant in London?</p>
+          <input type="radio" id="ans1" name="q7" value="Lenor Sassig" />
+          <label for="ans1">Lenor Sassig</label><br /><br />
+          <input type="radio" id="ans2" name="q7" value="Signor Messi" />
+          <label for="ans2">Signor Messi</label><br /><br />
+          <input type="radio" id="ans3" name="q7" value="Signor Sassi" />
+          <label for="ans3">Signor Sassi</label><br />
+        </div>
+
+        <div class="question">
+          <p>8. What TV show are you most likely to go on?</p>
+          <input type="radio" id="ans1" name="q8" value="Dragon's Den" />
+          <label for="ans1">Dragon's Den</label><br /><br />
+          <input type="radio" id="ans2" name="q8" value="Love Island" />
+          <label for="ans2">Love Island</label><br /><br />
+          <input type="radio" id="ans3" name="q8" value="Survivor" />
+          <label for="ans3">Survivor</label><br />
+        </div>
+      </div>
+      <div id="resultsContainer"></div>
+      <div class="buttons">
+        <button type="button" id="submitButton">Submit Answers!</button>
+        <button type="button" id="playAgainButton">Play Again!</button>
+      </div>
+      <div class="modal">
+        <div class="modal-content">
+          <span class="close-button">&times;</span>
+          <p id="modalMessage"></p>
+          <img
+            id="andrewimg"
+            src="andrew.jpeg"
+            alt="Photo of Andrew"
+            width="500"
+            height="500"
+          />
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>© Copyright 2022 Elizabeth O'Shea</p>
+      <p>
+        Contact me at
+        <a href="mailto:elizabethgraceoshea@gmail.com">Elizabeth's email</a>
+      </p>
+    </footer>
+  </body>
+</html>
